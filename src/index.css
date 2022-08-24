@@ -1,0 +1,138 @@
+.imgR-g,
+body {
+  overflow-x: hidden;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  background: #e9eaef;
+  width: 100vw;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.navbar,
+header,
+nav {
+  display: flex;
+  background: rgba(233, 234, 239, 0.75);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+}
+header,
+nav {
+  flex-direction: row;
+}
+.navbar,
+nav {
+  gap: 36px;
+}
+header {
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  flex: none;
+  align-self: stretch;
+  width: 100%;
+  z-index: 6;
+}
+nav {
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+}
+.navbar {
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navbar a {
+  text-transform: capitalize;
+  color: #161721;
+}
+[class^='ri-']::before {
+  color: #000;
+  display: block;
+  font-size: 24px;
+}
+.hero__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  width: 422px;
+  height: 320px;
+  left: 40px;
+  top: 247px;
+}
+.hero__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 10.4px;
+  width: 422px;
+  height: 44px;
+}
+.btn--primary,
+.btn--secondary {
+  display: flex;
+  padding: 24px;
+  width: 205.8px;
+  height: 44px;
+  letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: 23px;
+}
+.btn--primary {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #e9eaef;
+  border: none;
+  background: #2e3d7f;
+  border-radius: 649.35px;
+}
+.btn--secondary,
+h1 {
+  font-style: normal;
+  color: #2e3d7f;
+}
+.btn--secondary {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #e9eaef;
+  border: 1.95px solid #2e3d7f;
+  border-radius: 649.35px;
+}
+h1 {
+  width: 422px;
+  height: 186px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 62px;
+}
+.hero__p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #161721;
+}

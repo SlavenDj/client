@@ -1,0 +1,50 @@
+.imgR1,
+.imgR2,
+.imgR3,
+.imgR4,
+.imgsR {
+  position: absolute;
+}
+
+.imgR1,
+.imgR2,
+.imgR3,
+.imgR4 {
+  object-fit: cover;
+  border: 15px solid #e9eaef;
+  border-radius: 24px;
+}
+.imgR1 {
+  width: 502px;
+  height: 243px;
+  left: calc(50% - 502px / 2 - 196.5px);
+  top: calc(50% - 243px / 2 + 148.5px);
+  border-radius: 24px;
+}
+.imgR2 {
+  width: 478px;
+  height: 298px;
+  left: calc(50% - 478px / 2 + 208.5px);
+  top: calc(50% - 298px / 2 + 60px);
+}
+.imgR3 {
+  width: 63%;
+  height: 330px;
+  left: calc(50% - (330px / 2) - 152px);
+  top: calc(50% - 330px / 2 - 180px);
+}
+.imgR4 {
+  width: 261px;
+  left: calc(50% - 261px / 2 + 64px);
+  top: calc(50% - 253px / 2 + 218.5px);
+}
+.imgsR {
+  width: clamp(0px, calc(100vw - 422px - 64px), 895px);
+  height: 100vh;
+  right: 0;
+}
+.imgR-g {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
