@@ -1,7 +1,7 @@
-import imgR1 from './radionica_1.jpeg';
-import imgR2 from './radionica_2.webp';
-import imgR3 from './radionica_3.webp';
-import imgR4 from './radionica_4.webp';
+import imgR1 from '../imgs/radionica_1.jpeg';
+import imgR2 from '../imgs/radionica_2.webp';
+import imgR3 from '../imgs/radionica_3.webp';
+import imgR4 from '../imgs/radionica_4.webp';
 import './ImgsR.css';
 export function ImgsR() {
   return (

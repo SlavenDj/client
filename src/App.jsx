@@ -1,10 +1,9 @@
-import './App.css';
-import logo from './logo_white.svg';
-import Header from './Header';
-import HeroSection from './HeroSection';
+import logo from './imgs/logo_white.svg';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
 
 import 'remixicon/fonts/remixicon.css';
-import { Vesti } from './Vesti';
+import { Vesti } from './components/Vesti';
 function App() {
   return (
     <div>
