@@ -41,7 +41,7 @@ const Header = ({ logoPath }) => {
       <img src={logoPath} alt='logo' />
       <nav>
         <ul className='navbar'>{navItems}</ul>
-        <i className='ri-search-2-line'></i>
+        <i className='ri-search-2-line icon_hover_effect'></i>
       </nav>
       <i className='ri-menu-3-line menu-icon'></i>
     </header>

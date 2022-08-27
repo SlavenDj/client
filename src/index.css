@@ -51,11 +51,11 @@ i {
   height: 40px;
   overflow: hidden;
 }
-i:hover::before {
+.icon_hover_effect:hover::before {
   color: #e9eaef;
 }
 
-i::before {
+.icon_hover_effect::before {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -74,11 +74,71 @@ i::after {
   transition: 0.3s;
 }
 
-i:hover::after {
+.icon_hover_effect:hover::after {
   scale: 1;
   background-color: #2e3d7f;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+.section__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 32px;
+
+  width: 338px;
+  height: 403px;
+
+  background: #e9eaef;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+
+  /* Inside auto layout */
+
+  align-self: stretch;
+}
+.icon_circle {
+  background: #2e3d7f;
+  border-radius: 999px;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_circle i {
+  height: 50px;
+  width: 50px;
+}
+.icon_circle i::before {
+  font-size: 50px;
+  color: #e9eaef;
+}
+.section__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 26px;
+}
+.card__title {
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #161721;
+}
+.card__des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  color: #161721;
 }

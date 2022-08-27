@@ -1,0 +1,87 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 54px 40px;
+  gap: 56px;
+
+  max-width: 1440px;
+
+  align-self: stretch;
+}
+h2 {
+  /* font-family: 'Ubuntu'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 62px;
+
+  text-align: center;
+
+  color: #2e3d7f;
+}
+.about_us__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 49px;
+}
+.about_us__img {
+  width: 681.64px;
+}
+.about_us__content {
+  background: rgba(46, 61, 127, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 46px;
+  gap: 42px;
+  isolation: isolate;
+
+  width: 443px;
+  height: 381px;
+
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}
+.about_us__p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #e9eaef;
+}
+.about_us__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  /* padding: 24px; */
+
+  width: 242px;
+  height: 44px;
+
+  /* font-family: 'Roboto'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+
+  background: #e9eaef;
+  border-radius: 649.35px;
+}
+button a {
+  width: 100%;
+  padding: 24px;
+  display: block;
+}
+a {
+  color: #2e3d7f;
+}

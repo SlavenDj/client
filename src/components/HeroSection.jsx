@@ -3,7 +3,7 @@ import team_img from '../imgs/teams_imgs.png';
 import './HeroSection.css';
 export default function HeroSection() {
   return (
-    <section className='hero'>
+    <div className='hero'>
       {/* <ImgsR /> */}
 
       <div className='hero__content'>
@@ -21,6 +21,6 @@ export default function HeroSection() {
       </div>
 
       <img src={team_img} alt='' className='hero__img' />
-    </section>
+    </div>
   );
 }
