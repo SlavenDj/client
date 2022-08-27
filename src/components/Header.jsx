@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 const Header = ({ logoPath }) => {
   const navigationItems = [
@@ -36,11 +37,13 @@ const Header = ({ logoPath }) => {
 
   return (
     <header>
+      <i className='ri-menu-3-line hiddenMenu'></i>
       <img src={logoPath} alt='logo' />
       <nav>
         <ul className='navbar'>{navItems}</ul>
         <i className='ri-search-2-line'></i>
       </nav>
+      <i className='ri-menu-3-line menu-icon'></i>
     </header>
   );
 };

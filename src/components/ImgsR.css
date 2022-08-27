@@ -28,7 +28,7 @@
   top: calc(50% - 298px / 2 + 60px);
 }
 .imgR3 {
-  width: 63%;
+  width: 567px;
   height: 330px;
   left: calc(50% - (330px / 2) - 152px);
   top: calc(50% - 330px / 2 - 180px);
@@ -39,7 +39,7 @@
   top: calc(50% - 253px / 2 + 218.5px);
 }
 .imgsR {
-  width: clamp(0px, calc(100vw - 422px - 64px), 895px);
+  width: 895px;
   height: 100vh;
   right: 0;
 }
@@ -47,4 +47,10 @@
   width: 100%;
   height: 100vh;
   position: relative;
+}
+
+@media only screen and (width < 1282px) {
+  .imgsR {
+    display: none;
+  }
 }
