@@ -1,11 +1,8 @@
-import { ImgsR } from './ImgsR';
-import team_img from '../imgs/teams_imgs.png';
+import team_img from '../imgs/teams_imgs.webp';
 import './HeroSection.css';
 export default function HeroSection() {
   return (
     <div className='hero'>
-      {/* <ImgsR /> */}
-
       <div className='hero__content'>
         <div className='hero__text'>
           <h1>Udruženje za razvoj i podršku mladih Plus Ultra</h1>
@@ -20,7 +17,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <img src={team_img} alt='' className='hero__img' />
+      <img src={team_img} alt='' loading='lazy' className='hero__img' />
     </div>
   );
 }

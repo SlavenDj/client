@@ -35,7 +35,7 @@ export function Vesti() {
 function Article({ title, img, tags }) {
   return (
     <div className='article'>
-      <img src={img} alt='' className='article__img' />
+      <img src={img} alt='' className='article__img' loading='lazy' />
       <div className='article__content'>
         <h3 className='article__title' title={title}>
           {title}

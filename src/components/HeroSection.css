@@ -100,6 +100,9 @@ h1 {
   h1 {
     width: 100%;
   }
+  .hero {
+    justify-content: start;
+  }
   .hero__buttons {
     flex-direction: column;
     width: 100%;
@@ -107,7 +110,6 @@ h1 {
   .hero__content {
     width: 100%;
     margin: 0;
-    padding: 20px;
   }
   .hero__text {
     text-align: center;
@@ -119,6 +121,6 @@ h1 {
   }
   .hero__img {
     width: auto;
-    height: 50vh;
+    height: 40vh;
   }
 }

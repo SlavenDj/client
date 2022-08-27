@@ -14,7 +14,12 @@ function App() {
       <section className='about_us'>
         <h2>Mi smo</h2>
         <div className='about_us__main'>
-          <img src={team_img_2} alt='' className='about_us__img' />
+          <img
+            src={team_img_2}
+            alt=''
+            className='about_us__img'
+            loading='lazy'
+          />
           <div className='about_us__content'>
             <p className='about_us__p'>
               Naša vizija jeste stvoriti okruženje koje podstiče rast i u kojem
