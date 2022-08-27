@@ -77,14 +77,23 @@ h1 {
   color: #161721;
 }
 .hero__articles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  height: 240px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: hidden;
   padding: 0px;
   gap: 36px;
 }
 .hero__img {
   width: 60vw;
+}
+.hero__news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 36px;
 }
 
 @media only screen and (width < 768px) {

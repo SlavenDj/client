@@ -26,10 +26,10 @@ export function Vesti() {
     <Article key={i} title={title} img={img} tags={tags} />
   ));
   return (
-    <>
+    <div className='hero__news'>
       <h2>Najnovije</h2>
       <div className='hero__articles'>{articles}</div>
-    </>
+    </div>
   );
 }
 function Article({ title, img, tags }) {
@@ -37,7 +37,9 @@ function Article({ title, img, tags }) {
     <div className='article'>
       <img src={img} alt='' className='article__img' />
       <div className='article__content'>
-        <h3 className='article__title'>{title}</h3>
+        <h3 className='article__title' title={title}>
+          {title}
+        </h3>
         <div className='article__tags'>
           {tags.map((tag, i) => (
             <div className='article__tag' key={i}>
