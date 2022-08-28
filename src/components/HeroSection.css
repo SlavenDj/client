@@ -27,8 +27,7 @@
   align-items: center;
   padding: 0;
   gap: 10.4px;
-  width: 422px;
-  height: 44px;
+  width: 100%;
 }
 .btn--primary,
 .btn--secondary {
@@ -38,7 +37,6 @@
   height: 44px;
   letter-spacing: 0.03em;
   font-size: 20px;
-  line-height: 23px;
 }
 .btn--primary {
   flex-direction: row;
@@ -65,15 +63,12 @@ h1 {
 }
 h1 {
   width: 422px;
-
   font-weight: 700;
   font-size: 54px;
-  line-height: 62px;
 }
 .hero__p {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
   color: #161721;
 }
 .hero__articles {
@@ -99,9 +94,11 @@ h1 {
 @media only screen and (width < 768px) {
   h1 {
     width: 100%;
+    font-size: 44px;
   }
   .hero {
     justify-content: start;
+    height: auto;
   }
   .hero__buttons {
     flex-direction: column;
@@ -115,7 +112,7 @@ h1 {
     text-align: center;
   }
   .hero {
-    gap: 40px;
+    gap: 20px;
     padding: 20px;
     flex-direction: column-reverse;
   }

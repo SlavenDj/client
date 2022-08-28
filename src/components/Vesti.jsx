@@ -1,5 +1,5 @@
 import './article.css';
-export function Vesti() {
+export default function Vesti() {
   const vesti = [
     {
       title: 'title 1',

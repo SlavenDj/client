@@ -1,6 +1,5 @@
 .article__tag,
 .article__title {
-  display: flex;
   text-transform: uppercase;
 }
 .article {
@@ -8,22 +7,21 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 0;
-  width: auto;
   height: 225px;
   background: #fff;
-
   border-radius: 16px;
 }
-.article:hover {
-  scale: 1.01;
+.article:hover,
+.article__tag:hover {
   cursor: pointer;
-  filter: brightness(1.1);
+  filter: brightness(1.2);
+}
+.article__tag:hover {
+  scale: 1.1;
 }
 .article__img {
   height: 152px;
   background: #728ccf;
-  align-self: stretch;
 }
 .article__content {
   display: flex;
@@ -42,17 +40,10 @@
   align-items: center;
   font-weight: 600;
   font-size: 18px;
-  line-height: 21px;
-  align-items: center;
   color: #2e3d7f;
 }
 .article__tag {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 8px 16px;
-  align-items: center;
-  text-align: center;
   color: #e9eaef;
   background: #2e3d7f;
   border-radius: 99px;
