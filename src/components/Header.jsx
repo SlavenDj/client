@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = ({ logoPath }) => {
   const navigationItems = [
     {
       name: 'Početna',
-      url: '/home',
+      url: '/',
     },
     {
       name: 'O nama',
@@ -28,9 +29,9 @@ const Header = ({ logoPath }) => {
   const navItems = navigationItems.map((item, index) => {
     return (
       <li key={index}>
-        <a href={item.url} className='link'>
+        <Link to={item.url} className='link'>
           {item.name}
-        </a>
+        </Link>
       </li>
     );
   });
