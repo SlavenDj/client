@@ -4,7 +4,7 @@ import './about_us.css';
 import Header from './components/Header';
 import { Home } from './pages/Home';
 import { SectionsCard } from './SectionsCard';
-import logo from './imgs/logo_sareni.svg';
+import logo from './imgs/logo_white.svg';
 import { Page404 } from './pages/page404';
 const cimeSeBavimo = [
   {

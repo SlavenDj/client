@@ -1,30 +1,31 @@
+import { useEffect, useState } from 'react';
 import './article.css';
 export default function Vesti() {
-  const vesti = [
-    {
-      title: 'title 1',
-      img: 'no-url',
-      tags: ['tag 1', 'tag 2', 'tag 3'],
-    },
-    {
-      title: 'title 1',
-      img: 'no-url',
-      tags: ['tag 1', 'tag 2', 'tag 3'],
-    },
-    {
-      title: 'title 1',
-      img: 'no-url',
-      tags: ['tag 1', 'tag 2', 'tag 3'],
-    },
-    {
-      title: 'title 1',
-      img: 'no-url',
-      tags: ['tag 1', 'tag 2', 'tag 3'],
-    },
-  ];
-  const articles = vesti.map(({ title, img, tags }, i) => (
-    <Article key={i} title={title} img={img} tags={tags} />
-  ));
+  const [vesti, setVesti] = useState([]);
+  useEffect(() => {
+    async function x() {
+      try {
+        const vestiFromURI = await fetch(
+          'https://fd98699e-c3b9-45cf-849d-39c67ad48ff6.mock.pstmn.io'
+        );
+
+        setVesti(await vestiFromURI.json());
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    x();
+  }, []);
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    if (vesti !== [])
+      setArticles(
+        vesti.map(({ title, img, tags }, i) => (
+          <Article key={i} title={title} img={img} tags={tags} />
+        ))
+      );
+  }, [vesti]);
+
   return (
     <div className='hero__news'>
       <h2>Najnovije</h2>

@@ -1,18 +1,17 @@
-
 export function Footer() {
   const data = [
     {
-      icon: <i class='ri-mail-line'></i>,
+      icon: <i className='ri-mail-line'></i>,
       text: 'info@plusultra.ba',
       link: 'mailto:info@plusultra.ba',
     },
     {
-      icon: <i class='ri-map-pin-line'></i>,
+      icon: <i className='ri-map-pin-line'></i>,
       text: 'Reisa Fehima Spahe 96, 71000 Sarajevo',
       link: 'https://www.google.com/search?q=Reisa+Fehima+Spahe+96%2C+71000+Sarajevo&oq=Reisa+Fehima+Spahe+96%2C+71000+Sarajevo&aqs=chrome..69i57.152j0j1&sourceid=chrome&ie=UTF-8',
     },
     {
-      icon: <i class='ri-phone-line'></i>,
+      icon: <i className='ri-phone-line'></i>,
       text: '+387 62 907-022',
       link: 'tel:+38762907022',
     },
@@ -20,19 +19,19 @@ export function Footer() {
 
   const socialMedias = [
     {
-      icon: <i class='ri-facebook-circle-fill'></i>,
+      icon: <i className='ri-facebook-circle-fill'></i>,
       url: 'https://www.facebook.com/PlusUltraYouth/',
     },
     {
-      icon: <i class='ri-instagram-fill'></i>,
+      icon: <i className='ri-instagram-fill'></i>,
       url: 'https://www.instagram.com/plusultrayouth/',
     },
     {
-      icon: <i class='ri-linkedin-box-fill'></i>,
+      icon: <i className='ri-linkedin-box-fill'></i>,
       url: 'https://www.linkedin.com/company/plusultrayouth/?originalSubdomain=ba',
     },
     {
-      icon: <i class='ri-youtube-fill'></i>,
+      icon: <i className='ri-youtube-fill'></i>,
       url: 'https://www.youtube.com/channel/UCTdTYI_K02uV__r73Jx-f_g',
     },
   ];

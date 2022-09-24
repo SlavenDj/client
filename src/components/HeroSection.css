@@ -4,7 +4,8 @@
   align-items: center;
   gap: 40px;
   padding: 40px;
-  height: 100vh;
+  padding-top: 0;
+  height: 90vh;
 }
 
 .hero__content {
